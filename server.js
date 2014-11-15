@@ -57,9 +57,8 @@ app.route('/')
 		pluginAuthorURI = String(data.author.uri).length ? data.author.uri : 'http://mydomain.tld';
 		pluginAuthorEmail = String(data.author.email).length ? data.author.email : 'my@email.tld';
 		pluginNamePackage = capitalize( pluginSlug );
-		pluginNameInstance = pluginSlug.replace('-', '_');
-		pluginAuthorFull = pluginAuthor +'<'+ pluginAuthorEmail + '>';
-
+		pluginNameInstance = pluginSlug.replace(/-/gi, '_');
+		pluginAuthorFull = pluginAuthor +' <'+ pluginAuthorEmail + '>';
 
 		destination = process.cwd() + "/tmp/" + pluginSlug + '-' + new Date().getTime();
 
@@ -174,6 +173,21 @@ app.route('/')
 
 				});
 
+				//find Plugin_Name
+				replace({
+
+					regex: "Plugin_Name",
+
+					replacement: pluginNamePackage,
+
+					paths:[destination + '/' + pluginSlug],
+
+					recursive: true,
+
+					silent: true
+
+				});
+
 				//find Plugin slug
 				replace({
 
@@ -195,21 +209,6 @@ app.route('/')
 					regex: "http://example.com/",
 
 					replacement: pluginAuthorURI,
-
-					paths:[destination + '/' + pluginSlug],
-
-					recursive: true,
-
-					silent: true
-
-				});
-
-				//find Plugin_Name
-				replace({
-
-					regex: "Plugin_Name",
-
-					replacement: pluginNamePackage,
 
 					paths:[destination + '/' + pluginSlug],
 
@@ -367,7 +366,7 @@ var capitalize = function(name){
 
 	var newName = "";
 
-	name = name.replace('-', ' ');
+	name = name.replace(/-/gi, ' ');
 
 	pieces = name.split(' ');
 
@@ -377,7 +376,7 @@ var capitalize = function(name){
 
 	});
 
-	return newName.trim().replace(' ', '_');
+	return newName.trim().replace(/ /gi, '_');
 
 }
 
