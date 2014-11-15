@@ -250,9 +250,9 @@ app.route('/')
 	}); //END ROUTE
 
 /**
- * CRON JOB TO GET NEW CODE FROM GITHUB EVERY DAY AT 1AM
+ * CRON JOB TO GET NEW CODE FROM GITHUB EVERY DAY AT 1:30AM
  */
-var job = new CronJob(' 1 * * *', function(){
+var job = new CronJob('30 1 * * *', function(){
 
 	//GET FRESH CODE
 	getSourceCode();
