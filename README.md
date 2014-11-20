@@ -1,6 +1,6 @@
 # WordPress Plugin Boilerplate Generator
 
-A Node.js small application to generate a custom zip file based on Tom's foundation plugin ( [wppb.io](http://wppb.io) ).
+A Node.js small application to generate a custom zip file based on the WPPB by Tom McFarlin ( [wppb.io](http://wppb.io) ).
 
 This app will find and replace plugin-name, Plugin_Name, plugin_name and author information from the original code and will send a zip file with the new code, ready to use.
 
