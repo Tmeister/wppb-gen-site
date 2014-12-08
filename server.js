@@ -16,6 +16,7 @@ var replace = require('replace');
 var bodyParser = require('body-parser')
 var EasyZip = require('easy-zip').EasyZip;
 var CronJob = require('cron').CronJob;
+var ua = require('universal-analytics');
 
 app.set('port', port);
 app.set('view engine', 'ejs');
@@ -48,6 +49,10 @@ app.route('/')
 		var pluginAuthorFull = "";
 		var destination = "";
 		var data = req.body
+		var visitor = ua('UA-56742268-1');
+
+		//Track Event
+		visitor.event('build', 'click', 'download', 1).send();
 
 		// ALL field REQUERIED IF EMPTY SET DEAFULT  VALUES
 		pluginSlug = String(data.slug).length ? String(data.slug).toLowerCase() : 'amazing-plugin';

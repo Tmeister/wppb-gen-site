@@ -16,7 +16,8 @@
     "github-download": "^0.3.0",
     "mime": "^1.2.11",
     "replace": "^0.3.0",
-    "rimraf": "^2.2.8"
+    "rimraf": "^2.2.8",
+    "universal-analytics": "^0.3.6"
   },
   "engines": {
     "node": "0.10.x"
