@@ -206,7 +206,7 @@ app.route('/')
 				//find Author URI
 				replace({
 
-					regex: "http://example.com/",
+					regex: "http://example.com/?",
 
 					replacement: pluginAuthorURI,
 
