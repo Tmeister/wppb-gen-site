@@ -286,7 +286,7 @@ clean.start();
  */
 var getSourceCode = function(){
 
-	var repo = {user: 'tommcfarlin', repo: 'WordPress-Plugin-Boilerplate', ref: 'master'};
+	var repo = {user: 'DevinVinson', repo: 'WordPress-Plugin-Boilerplate', ref: 'master'};
 
 	var destination = process.cwd() + "/source/";
 
