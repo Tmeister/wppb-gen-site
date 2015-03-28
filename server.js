@@ -223,21 +223,6 @@ app.route('/')
 
 				});
 
-				//find plugin_pame
-				replace({
-
-					regex: "plugin_name",
-
-					replacement: pluginNameInstance,
-
-					paths:[destination + '/' + pluginSlug],
-
-					recursive: true,
-
-					silent: true
-
-				});
-
 
 				//Replace done ZIP it
 
