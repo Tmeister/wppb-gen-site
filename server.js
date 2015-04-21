@@ -223,6 +223,20 @@ app.route('/')
 
 				});
 
+				//find Author URI
+				replace({
+
+					regex: "plugin_name",
+
+					replacement: pluginNameInstance,
+
+					paths:[destination + '/' + pluginSlug + '/trunk/' + pluginSlug +'.php'],
+
+					recursive: true,
+
+					silent: true
+
+				});
 
 				//Replace done ZIP it
 
