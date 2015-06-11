@@ -54,7 +54,7 @@ app.route('/')
 		//Track Event
 		visitor.event('build', 'click', 'download', 1).send();
 
-		// ALL field REQUERIED IF EMPTY SET DEAFULT  VALUES
+		// ALL FIELDS REQUIRED IF EMPTY SET DEFAULT VALUES
 		pluginSlug = String(data.slug).length ? String(data.slug).toLowerCase() : 'amazing-plugin';
 		pluginName = String(data.name).length ? data.name : 'Amazing Plugin';
 		pluginURI = String(data.uri).length ? data.uri : 'http://example.com/amazing-plugin-uri/' ;
