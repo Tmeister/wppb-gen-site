@@ -1,3 +1,6 @@
+[![Dependency Status](https://david-dm.org/tmeister/wppb-gen-site.svg)](https://david-dm.org/tmeister/wppb-gen-site.svg)
+___
+
 # WordPress Plugin Boilerplate Generator
 
 A Node.js small application to generate a custom zip file based on the WPPB by Tom McFarlin ( [wppb.io](http://wppb.io) ).
