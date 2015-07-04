@@ -110,7 +110,7 @@ app.route('/')
 
 					replacement: pluginURI,
 
-					paths:[destination + '/' + pluginSlug + '/trunk/' + pluginSlug +'.php'],
+					paths:[destination + '/' + pluginSlug + '/' + pluginSlug +'.php'],
 
 					recursive: false,
 
@@ -125,7 +125,7 @@ app.route('/')
 
 					replacement: pluginName,
 
-					paths:[destination + '/' + pluginSlug + '/trunk/' + pluginSlug +'.php'],
+					paths:[destination + '/' + pluginSlug + '/' + pluginSlug +'.php'],
 
 					recursive: true,
 
@@ -140,7 +140,7 @@ app.route('/')
 
 					replacement: pluginURI,
 
-					paths:[destination + '/' + pluginSlug + '/trunk/' + pluginSlug +'.php'],
+					paths:[destination + '/' + pluginSlug + '/' + pluginSlug +'.php'],
 
 					recursive: true,
 
@@ -155,7 +155,7 @@ app.route('/')
 
 					replacement: pluginAuthor,
 
-					paths:[destination + '/' + pluginSlug + '/trunk/' + pluginSlug +'.php'],
+					paths:[destination + '/' + pluginSlug + '/' + pluginSlug +'.php'],
 
 					recursive: true,
 
@@ -230,7 +230,7 @@ app.route('/')
 
 					replacement: pluginNameInstance,
 
-					paths:[destination + '/' + pluginSlug + '/trunk/' + pluginSlug +'.php'],
+					paths:[destination + '/' + pluginSlug + '/' + pluginSlug +'.php'],
 
 					recursive: true,
 
