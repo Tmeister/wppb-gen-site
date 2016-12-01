@@ -34,7 +34,7 @@ app.route('/')
 	//GET REQUEST DRAW THE HOME PAGE
 	.get(function(req, res){
 
-		res.render('index');
+		res.redirect('https://wppb.me');
 
 	}) // END GET ROUTE
 
