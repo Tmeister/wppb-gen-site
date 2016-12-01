@@ -25,9 +25,9 @@ app.set('views', path.join( __dirname, 'views' ));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.route('/.well-known/acme-challenge/kptZM7_izaMcSaMNkdl2l8Pe_VWPKQaVrnPBSaXDLn0')
+app.route('/.well-known/acme-challenge/miU-q9A8ox1btoayRB8tM6wcWPisl42aR4wnixiK2UU')
         .get(function(req, res){
-          res.send('ok');
+          res.send('miU-q9A8ox1btoayRB8tM6wcWPisl42aR4wnixiK2UU.9s9UoMhX5iRzhJpZG6oAd-7PRFIBTPxbwd7nVTPfGcM');
         })
 
 app.route('/')
