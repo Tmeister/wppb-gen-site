@@ -25,6 +25,10 @@ app.set('views', path.join( __dirname, 'views' ));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:true}));
 
+app.route('/.well-known/acme-challenge/kptZM7_izaMcSaMNkdl2l8Pe_VWPKQaVrnPBSaXDLn0')
+        .get(function(req, res){
+          res.send('ok');
+        })
 
 app.route('/')
 	//GET REQUEST DRAW THE HOME PAGE
