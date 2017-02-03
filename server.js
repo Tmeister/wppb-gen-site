@@ -33,8 +33,8 @@ app.route('/.well-known/acme-challenge/miU-q9A8ox1btoayRB8tM6wcWPisl42aR4wnixiK2
 app.route('/')
 	//GET REQUEST DRAW THE HOME PAGE
 	.get(function(req, res){
-
-		res.redirect('https://wppb.me');
+                res.send('Please visit <a href="https://wppb.me">https://wppb.me</a>');
+		//res.redirect('https://wppb.me');
 
 	}) // END GET ROUTE
 
