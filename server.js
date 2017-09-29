@@ -193,6 +193,15 @@ app.route('/')
 
 				});
 
+                // PLUGIN_NAME
+                replace({
+                    regex: "PLUGIN_NAME",
+                    replacement: pluginNamePackage.toUpperCase(),
+                    paths:[destination + '/' + pluginSlug],
+                    recursive: true,
+                    silent: true
+                });
+
 				//find Plugin slug
 				replace({
 
