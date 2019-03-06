@@ -61,7 +61,6 @@ app
 
     //Track Event
     visitor.event('build', 'click', 'download', 1).send();
-    console.log('req :', req);
     // ALL FIELDS REQUIRED IF EMPTY SET DEFAULT VALUES
     pluginSlug = String(data.slug).length
       ? String(data.slug).toLowerCase()
