@@ -80,7 +80,7 @@ app
       : 'my@email.tld';
     pluginNamePackage = capitalize(pluginSlug);
     pluginNameInstance = pluginSlug.replace(/-/gi, '_');
-    pluginNameVersion = pluginNameInstance + '_VERSION';
+    pluginNameVersion = capitalize(pluginNameInstance + '_VERSION');
     pluginAuthorFull = pluginAuthor + ' <' + pluginAuthorEmail + '>';
 
     destination =
