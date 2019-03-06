@@ -20,7 +20,7 @@
     "universal-analytics": "^0.4.20"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "10.15.x"
   },
   "repository": {
     "type": "git",
