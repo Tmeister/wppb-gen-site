@@ -55,6 +55,7 @@ app
     var pluginNameInstance = '';
     var pluginAuthorEmail = '';
     var pluginAuthorFull = '';
+    var pluginNameVersion = '';
     var destination = '';
     var data = req.body;
     var visitor = ua('UA-56742268-1');
@@ -80,7 +81,7 @@ app
       : 'my@email.tld';
     pluginNamePackage = capitalize(pluginSlug);
     pluginNameInstance = pluginSlug.replace(/-/gi, '_');
-    pluginNameVersion = capitalize(pluginNameInstance + '_VERSION');
+    pluginNameVersion = (pluginNameInstance + '_VERSION').toUpperCase();
     pluginAuthorFull = pluginAuthor + ' <' + pluginAuthorEmail + '>';
 
     destination =
