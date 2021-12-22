@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>WordPress Plugin Boilerplate Generator | Ready to use WordPress Plugin Boilerplate</title>
+		<title>Codash WPPB: WordPress Plugin Boilerplate Generator by Codash</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="WordPress Plugin Boilerplate Generator, Stop wasting time searching and replacing text strings manually" />
 		<meta name="keywords" content="WordPress Plugin Boilerplate Generator" />
-		<meta name="google-site-verification" content="dQh-6Zo1qY9Zbe2vgxl-JcwIwjJoOmjZRadd9Sit1ZE" />
-		<meta property="og:url" content="http://wppb.me" />
-		<meta property="og:title" content="WordPress Plugin Boilerplate Generator | Ready to use WordPress Plugin Boilerplate" />
+		<!-- <meta name="google-site-verification" content="dQh-6Zo1qY9Zbe2vgxl-JcwIwjJoOmjZRadd9Sit1ZE" /> -->
+		<meta property="og:url" content="http://wppb.codash.com.br" />
+		<meta property="og:title" content="Codash WPPB: WordPress Plugin Boilerplate Generator by Codash" />
 		<meta property="og:image" content="http://wppb.me/images/wppb-share.jpg" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
@@ -30,68 +30,58 @@
 
 		<!-- Header -->
 			<div id="header">
-				<span class="logo icon fa-plug"></span>
-				<h1>WordPress Plugin Boilerplate<br> Generator</h1>
-				<h2>Based on the <a href="http://wppb.io/" title="WordPress Plugin Boilerplate by Tom McFarlin">WPPB by Tom McFarlin</a></h2>
-				<h3>Now maintained by <a href="https://twitter.com/devinvinson">Devin Vinson</a></h3>
-				<p>Stop wasting time searching and replacing text strings manually.</p>
+				<span class="logo"></span>
+				<h1>WordPress Plugin<br />Boilerplate Generator</h1>
+				<p><small>by <a href="https://codash.com.br/" target="_blank">Codash</a></small></p>
+				<p>Gerador de plugin estrutural para WordPress</p>
 
 			</div>
 
 		<!-- Main -->
 			<div id="main">
-
-				<header class="major container 75%">
-					<h2>You only need to type your plugin
-					<br />
-					details in the form below
-					<br />
-					and a zip file will be generated</h2>
-				</header>
-
 				<div class="box container">
 					<header>
-						<h2>Create your amazing wppb based plugin</h2>
+						<h2>Crie um plugin "esqueleto"</h2>
 					</header>
 					<section>
 						<form method="POST" action="/" id="wppb-form">
 							<div class="row">
 								<div class="6u 12u(3)">
-									<label for="name">Plugin Name</label>
-									<input class="text" type="text" name="name" id="name" value="" placeholder="Your amazing plugin" data-validation="required" />
+									<label for="name">Nome do Plugin</label>
+									<input class="text" type="text" name="name" id="name" value="" placeholder="Meu maravilhoso plugin" data-validation="required" />
 								</div>
 								<div class="6u 12u(3)">
-									<label for="slug">Plugin Slug</label>
-									<input class="text" type="text" name="slug" id="slug" value="" placeholder="your-amazing-plugin" data-validation="required" />
+									<label for="slug">Slug do Plugin</label>
+									<input class="text" type="text" name="slug" id="slug" value="" placeholder="meu-maravilhoso-plugin" data-validation="required" />
 								</div>
 							</div>
 							<div class="row">
 								<div class="12u">
-									<label for="uri">Plugin URI</label>
-									<input class="text" type="text" name="uri" id="uri" value="" placeholder="Your Plugin URI" data-validation="required" data-validation="url" />
+									<label for="uri">Página do Plugin</label>
+									<input class="text" type="text" name="uri" id="uri" value="" placeholder="URL da página de apresentação ou repositório do seu plugin" data-validation="required" data-validation="url" />
 								</div>
 							</div>
 							<div class="row">
 								<div class="6u 12u(3)">
-									<label for="author-name">Author Name</label>
-									<input class="text" type="text" name="author[name]" id="author-name" value="" placeholder="Your name" data-validation="required" />
+									<label for="author-name">Nome do Autor</label>
+									<input class="text" type="text" name="author[name]" id="author-name" value="" placeholder="Seu nome" data-validation="required" />
 								</div>
 								<div class="6u 12u(3)">
-									<label for="author-email">Author Email</label>
-									<input class="text" type="email" name="author[email]" id="author-email" value="" placeholder="your@email.tld" data-validation="required"  data-validation="email"/>
+									<label for="author-email">Email do Autor</label>
+									<input class="text" type="email" name="author[email]" id="author-email" value="" placeholder="Seu email de contato" data-validation="required"  data-validation="email"/>
 								</div>
 							</div>
 							<div class="row">
 								<div class="12u">
-									<label for="author-uri">Author URI</label>
-									<input class="text" type="text" name="author[uri]" id="author-uri" value="" placeholder="http://yoursite.tld" data-validation="required" data-validation="url" />
+									<label for="author-uri">Site do Autor</label>
+									<input class="text" type="text" name="author[uri]" id="author-uri" value="" placeholder="http://seusite.tld" data-validation="required" data-validation="url" />
 								</div>
 							</div>
 							<div class="row">
 								<div class="12u">
 									<ul class="actions">
-										<li><input type="submit" value="Build" /></li>
-										<li><input type="reset" value="Reset" class="alt" /></li>
+										<li><input type="submit" value="Criar" /></li>
+										<li><input type="reset" value="Resetar" class="alt" /></li>
 									</ul>
 								</div>
 							</div>
@@ -100,9 +90,10 @@
 				</div>
 				<div class="box container">
 					<section>
-						<div id="impactful-tutorial"></div>
-						<script src="//client.stepify.co/embed/tutorize.js"></script>
-						<script>tutorizeInit("id", "56eb25864780f81200ee8f7d");</script>
+						Créditos
+						<p>Baseado no <a href="http://wppb.io/" title="WordPress Plugin Boilerplate by Tom McFarlin">WPPB by Tom McFarlin</a><br />
+						Agora mantido por <a href="https://twitter.com/devinvinson">Devin Vinson</a><br />
+						Fork do <a href="#">Repositório</a></p>
 					</section>
 				</div>
 			</div>
@@ -111,12 +102,12 @@
 			<div id="footer">
 				<div class="container 75%">
 					<ul class="icons">
-						<li><a href="https://twitter.com/tmeister" class="icon fa-twitter" title="Follow me"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/Tmeister/wppb-gen-site" class="icon fa-github" title="Fork this site"><span class="label">Github</span></a></li>
-						<li><a href="https://www.facebook.com/ecdevelopment" class="icon fa-facebook" title="Find me in Facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://codash.com.br" class="icon fa-globe" title="Site da Codash"><span class="label">Site da Codash</span></a></li>
+						<li><a href="https://github.com/rafael-business/wppb-gen-site/tree/codash" class="icon fa-github" title="Repositório deste Projeto"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-wordpress" title="Nossos plugins no wordpress.org"><span class="label">WordPress</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; <%= new Date().getFullYear()  %> <a href="http://enriquechavez.co">Enrique Chavez</a>.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; <%= new Date().getFullYear()  %> <a href="https://codash.com.br">Codash</a> / <a href="http://enriquechavez.co">Enrique Chavez</a>.</li><li>Design: <a href="https://codash.com.br">Codash</a> / <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</div>

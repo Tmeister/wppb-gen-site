@@ -226,10 +226,10 @@
 		color: #5b5b5b;
 		font-size: 0.8em;
 		font-weight: 700;
-		letter-spacing: 0.125em;
+		letter-spacing: 0;
 		line-height: 1.75em;
-		text-transform: uppercase;
-		margin: 0 0 0.5em 0;
+		text-transform: normal;
+		margin: 0;
 	}
 
 	input[type="text"],
@@ -740,11 +740,11 @@
 /* Header */
 
 	#header {
-		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../images/header.jpg");
-		background-position: bottom center,					top left,				center center;
-		background-repeat: repeat-x,						repeat,					no-repeat;
-		background-size: 3200px 460px,					auto,					cover;
+		background-attachment: scroll,					fixed;
+		background-image: url("images/top-3200.svg"), 	url("../images/header.jpg");
+		background-position: bottom center,				center center;
+		background-repeat: repeat-x,					no-repeat;
+		background-size: 3200px 460px,					cover;
 		color: rgba(255, 255, 255, 0.8);
 		padding: 10em 0 20em 0;
 		position: relative;
@@ -798,7 +798,7 @@
 		}
 
 		#header .logo {
-			background: #4eb980;
+			background: white;
 			border-radius: 100%;
 			color: white;
 			cursor: default;
@@ -809,6 +809,9 @@
 			margin: 0 0 0.75em 0;
 			text-align: center;
 			width: 2.35em;
+			background-image: url(https://codash.s3.sa-east-1.amazonaws.com/arquivos/2021/12/logo_codash_icone_robot.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 
 			#header .logo.fa-paper-plane-o:before {

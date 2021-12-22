@@ -50,7 +50,10 @@
 
 		// Validate Form
 			$.validate({
-					form : '#wppb-form'
+				form : '#wppb-form', 
+				language: { 
+					requiredFields: "Este campo é obrigatório!" 
+				}
 			});
 
 	});
