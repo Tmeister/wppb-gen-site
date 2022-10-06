@@ -1,5 +1,7 @@
-[![Dependency Status](https://david-dm.org/tmeister/wppb-gen-site.svg)](https://david-dm.org/tmeister/wppb-gen-site)
-___
+# IMPORTANT - This version is not used and maintained anymore
+
+The new generator site repo can be found at https://github.com/Tmeister/wppb-generator
+
 
 # WordPress Plugin Boilerplate Generator
 
